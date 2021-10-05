@@ -6,17 +6,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Dream House</title>
         <link rel="stylesheet" href="main.css" />
+        <script src="script.js" defer></script>
+        <!--   Import FontAweseome Icons   -->
+        <script
+            src="https://kit.fontawesome.com/e504f5c289.js"
+            crossorigin="anonymous"
+        ></script>
     </head>
 
     <body>
         <!-- Navbar -->
         <header class="header">
             <nav class="container flex nav">
-                <div class="logo">
-                    <a href="#"></a>
+                <div class="flex brand">
+                    <a class="logo-icon" href="#"></a>
+                    <h3 class="logo-text">HOM</h3>
                 </div>
-                <ul class="flex nav__ul">
-                    <li><a class="nav__active" href="#"> Home </a></li>
+                <ul class="flex nav__menu">
+                    <li><a class="nav__active border--rounded" href="#"> Home </a></li>
                     <li><a href="#"> Projects </a></li>
                     <li><a href="#"> Sell </a></li>
                     <li><a href="#"> Buy </a></li>
@@ -24,11 +31,17 @@
                     <li><a href="#"> Contact </a></li>
                     <li><a class="nav__login" href="#"> Login </a></li>
                     <li>
-                        <a class="nav__talk nav__highlight" href="#">
+                        <a class="nav__talk nav__highlight border--rounded" href="#">
                             Talk to us
                         </a>
                     </li>
                 </ul>
+                <div class="hamburger">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="hamburger-exit">
+                    <i class="fas fa-times"></i>
+                </div>
             </nav>
         </header>
     </body>
