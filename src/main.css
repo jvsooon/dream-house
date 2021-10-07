@@ -387,6 +387,86 @@ a:active {
     text-align: center;
 }
 
+/* Section Sale */
+.section__house {
+    text-align:center;
+}
+
+.house__title {
+    margin: 1.5em 0;
+}
+
+.house__description {
+    margin-bottom: 3em;
+}
+
+.house__showcase {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.house__card {
+    margin-bottom: 3em;
+    position: relative;
+    filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.12));
+}
+
+.house__card img{
+    border-radius: .5em;
+    width: 22em;
+    height: 95%;
+}
+
+.house__infocard {
+    height: 30%;
+    width: 86%;
+    left: 7%;
+    right: 7%;
+    position: absolute;
+    bottom: 1.6em;
+    background: #ffffff;
+    border-radius: .5em;
+    filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.12));
+    text-align: left;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.house__location {
+    position: absolute;
+    top: -3.6em;
+    background: var(--primary-green);
+    border: 3px solid var(--primary-green);
+    padding: 0.85em 2em;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.fa-map-marker-alt {
+    color: #ffffff;
+    font-size: 1.3em;
+    margin-right: .5em;
+}
+
+.house__card__title {
+    margin: 1em;
+}
+
+.house__card__content {
+    margin: 2em 1.5em;
+    justify-content: space-between;
+}
+
+.fa-star{
+    color: #d5c178;
+}
+
+.star-grey {
+    color: #f3efd8;
+}
+
+
 /* Media Queries */
 
 /* Large Breakpoint */
