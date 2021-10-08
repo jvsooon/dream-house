@@ -390,6 +390,7 @@ a:active {
 /* Section Sale */
 .section__house {
     text-align:center;
+    height: auto;
 }
 
 .house__title {
@@ -403,33 +404,49 @@ a:active {
 .house__showcase {
     justify-content: space-around;
     flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .house__card {
     margin-bottom: 3em;
-    position: relative;
+    /* position: relative; */
+    flex-direction: column;
+    justify-content: center;
     filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.12));
 }
 
 .house__card img{
     border-radius: .5em;
     width: 22em;
-    height: 95%;
+    height: 501px;
+    /* height: 95%; */
+    /* position: relative; */
+}
+
+.housecard__active {
+    transform: scale(1.08);
 }
 
 .house__infocard {
-    height: 30%;
-    width: 86%;
-    left: 7%;
-    right: 7%;
-    position: absolute;
-    bottom: 1.6em;
+    height: 158px;
+    /* width: 86%; */
+    margin: 0 1.2em;
+    margin-top: -9.8em;
+    /* position: absolute; */
+    /* left: 7%; */
+    /* right: 7%; */
+    /* bottom: 0; */
+    /* bottom: 9.8em; */
+    /* bottom: 1.6em; */
     background: #ffffff;
     border-radius: .5em;
-    filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.12));
     text-align: left;
     flex-direction: column;
-    justify-content: space-between;
+    filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.12));
+}
+
+.infocard__active {
+    margin-top: -6em;
 }
 
 .house__location {
@@ -456,6 +473,7 @@ a:active {
 .house__card__content {
     margin: 2em 1.5em;
     justify-content: space-between;
+    align-items: center;
 }
 
 .fa-star{
@@ -488,6 +506,15 @@ a:active {
 
     .hamburger {
         display: block;
+    }
+
+    .housecard__active {
+        transform: scale(1);
+    }
+
+    .infocard__active {
+        /* bottom: 1.6em ; */
+        margin-top: -9.8em;
     }
 }
 
