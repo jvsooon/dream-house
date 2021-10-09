@@ -583,6 +583,64 @@ a:active {
     -webkit-text-fill-color: transparent;
 }
 
+
+/* Section Client Reviews */
+.section__clients {
+    text-align: center;
+}
+
+.clients__title {
+    margin: 1.5em 0;
+}
+
+.clients__description {
+    margin: 0 19em;
+    margin-bottom: 6em;
+}
+
+.clients__showcase {
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.client__card {
+    filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.12));
+    background: #ffffff;
+    width: 24em;
+    margin-bottom: 3em;
+    border-radius: 1em;
+}
+
+.client__card--middle {
+    background: var(--primary-green);
+    transform: scale(1.05);
+    color: #ffffff;
+}
+
+.client__img {
+    border-radius: 0 1.8em 1.8em 1.8em;
+    margin:auto;
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+    width: 30%;
+    filter: drop-shadow(0.8rem 0.8rem 1rem rgba(0, 0, 0, 0.12));
+}
+
+.fa-quote-left {
+    font-size: 2em;
+    color: var(--primary-green);
+    margin: 1em 0;
+}
+
+.quote--middle {
+    color: #ffffff;
+}
+
+.client__description {
+    margin: 0 2.5em;
+    margin-bottom: 4em;
+}
+
 /* Media Queries */
 
 /* Large Breakpoint */
@@ -615,9 +673,13 @@ a:active {
         margin-top: -9.8em;
     }
 
-    .agents__description {
+    .agents__description, .clients__description {
         margin-left: 9.5em;
         margin-right: 9.5em;
+    }
+
+    .client__card--middle {
+        transform: scale(1);
     }
 }
 
@@ -666,7 +728,8 @@ a:active {
     .icon-topright {
         top: -1em !important;
     }
-    .agents__description {
+
+    .agents__description, .clients__description {
         margin-left: 4.75em;
         margin-right: 4.75em;
     }
@@ -712,7 +775,7 @@ a:active {
         right: 2em;
     }
 
-    .agents__description {
+    .agents__description, .clients__description {
         margin-left: 2.375em;
         margin-right: 2.375em;
     }
