@@ -1,6 +1,7 @@
 const hamburger = document.querySelector(".hamburger");
 const hamburgerExit = document.querySelector(".hamburger-exit");
 const navMenu = document.querySelector(".nav__menu");
+// const navMenu = document.querySelector(".nav__drawer");
 
 
 const toggleDrawer = () => {
