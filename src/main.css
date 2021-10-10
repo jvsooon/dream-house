@@ -544,7 +544,8 @@ a:active {
 
 .fa-facebook-f,
 .fa-twitter,
-.fa-instagram {
+.fa-instagram,
+.fa-whatsapp {
     font-size: 1.8em;
 }
 
@@ -583,7 +584,6 @@ a:active {
     -webkit-text-fill-color: transparent;
 }
 
-
 /* Section Client Reviews */
 .section__clients {
     text-align: center;
@@ -619,7 +619,7 @@ a:active {
 
 .client__img {
     border-radius: 0 1.8em 1.8em 1.8em;
-    margin:auto;
+    margin: auto;
     margin-top: 3em;
     margin-bottom: 1.5em;
     width: 30%;
@@ -639,6 +639,96 @@ a:active {
 .client__description {
     margin: 0 2.5em;
     margin-bottom: 4em;
+}
+
+/* Footer */
+.footer__container {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 4em;
+}
+
+.footer-col {
+    flex-direction: column;
+    margin: 0 1.4em;
+    margin-bottom: 2em;
+    flex: 1;
+}
+
+.footer__edge__col {
+    flex: 2;
+}
+
+.footer__col__title {
+    margin-bottom: 1em;
+}
+
+.footer__col1__description {
+    margin: 2em 0;
+}
+
+.footer-col a {
+    color: var(--primary-black);
+    margin: 0.3em 0;
+}
+
+.footer__socials {
+    justify-content: flex-start;
+}
+
+.footer__socials .social__link {
+    margin-right: 2em;
+}
+
+.fa-whatsapp {
+    color: #25d366;
+}
+
+.footer__search {
+    margin-top: 3em;
+}
+
+.footer__input {
+    font-size: 1.5em;
+    border-radius: 0 0.4em 0.4em 0.4em;
+    border: 3px solid var(--primary-green);
+    padding: 0.4em;
+}
+
+.footer__search__btn {
+    background: var(--primary-green);
+}
+
+.fa-paper-plane {
+    font-size: 1.5em;
+    padding: 0.5em;
+    border-radius: 0.4em 0 0 0.4em;
+    color: #ffffff;
+}
+
+.fa-paper-plane:hover {
+    color: var(--primary-green);
+}
+
+.footer__input:focus {
+    outline: none;
+}
+
+.footer__search__btn {
+    padding: 0 1em;
+    border: 3px solid var(--primary-green);
+    border-radius: 0 0.6em 0.6em 0.6em;
+    background: var(--primary-green);
+    transition: border 300ms ease-in-out, background-color 300ms ease-in-out;
+    color: #ffffff;
+    font-weight: bold;
+    margin-left: -1em;
+}
+
+.footer__search__btn:hover {
+    background: #ffffff !important;
+    border: 3px solid var(--primary-green);
+    color: var(--primary-green) !important;
 }
 
 /* Media Queries */
@@ -673,7 +763,10 @@ a:active {
         margin-top: -9.8em;
     }
 
-    .agents__description, .clients__description {
+    .partner__description,
+    .house__description,
+    .agents__description,
+    .clients__description {
         margin-left: 9.5em;
         margin-right: 9.5em;
     }
@@ -729,7 +822,10 @@ a:active {
         top: -1em !important;
     }
 
-    .agents__description, .clients__description {
+    .partner__description,
+    .house__description,
+    .agents__description,
+    .clients__description {
         margin-left: 4.75em;
         margin-right: 4.75em;
     }
@@ -775,8 +871,19 @@ a:active {
         right: 2em;
     }
 
-    .agents__description, .clients__description {
-        margin-left: 2.375em;
-        margin-right: 2.375em;
+    .agents__description,
+    .clients__description {
+        /* margin-left: 2.375em; */
+        /* margin-right: 2.375em; */
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .footer__search {
+        justify-content: center;
+    }
+
+    .footer__edge__col {
+        flex: 1;
     }
 }
