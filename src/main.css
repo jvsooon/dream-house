@@ -24,16 +24,35 @@ section {
     padding-bottom: 5em;
 }
 
-img {
-    max-width: 100%;
-    display: block;
-}
-
 h1,
 h2,
 h3,
 p {
     margin: 0;
+    margin-bottom: 1em;
+}
+
+h1 {
+    font-size:  clamp(2.027rem, 1.6950rem + 1.4754vw, 2.986rem);
+}
+
+h2 {
+    font-size: clamp(1.602rem, 1.4386rem + 0.7262vw, 2.074rem);
+}
+
+.intro__description,
+.property__description,
+.partner__description,
+.house__description,
+.agents__description,
+.clients__description {
+    margin-bottom: 4em;
+    line-height: 2em;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 /* Helpers */
@@ -193,20 +212,10 @@ a:active {
     -webkit-line-clamp: 2;
 }
 
-.intro__h1 {
-    font-size: 3.6rem;
-    margin-bottom: 0.8em;
-}
-
-.intro__p {
-    line-height: 2em;
-}
-
 .intro__cover {
     width: 50%;
     position: relative;
     align-self: center;
-    /* overflow-x: hidden; */
 }
 
 .logo--large {
@@ -230,15 +239,6 @@ a:active {
     right: 0;
     top: 2em;
     margin-right: -6em;
-}
-
-/* .intro__img { */
-/* width: 50%; */
-/* height: auto; */
-/* } */
-
-.intro__search {
-    margin-top: 5em;
 }
 
 .fa-search {
@@ -303,21 +303,10 @@ a:active {
     border-radius: 6em 0 6em 6em;
 }
 
-.property-description {
+.property-content {
     width: 45%;
     padding-left: 8em;
     align-self: center;
-}
-
-.property__title {
-    color: var(--primary-black);
-    margin: 1em 0;
-    font-size: 1.8rem;
-}
-
-.property-p {
-    margin: 1.5em 0;
-    line-height: 2em;
 }
 
 .property-container {
@@ -348,15 +337,19 @@ a:active {
     margin-left: 0.7em;
 }
 
+.property__title {
+    margin-top: 1em;
+}
+
 /* Section Partners */
 .section__partners {
     background: var(--secondary-green);
+    text-align: center;
 }
 
-.partner__container {
-    flex-direction: column;
-    align-items: center;
-    margin: 3em auto;
+.partner__description {
+    margin-left: 14em;
+    margin-right: 14em;
 }
 
 .partner__logos {
@@ -372,27 +365,14 @@ a:active {
     margin: 1.6em;
 }
 
-.partner__title {
-    margin-bottom: 1.5em;
-}
-
-.partner__description {
-    margin-bottom: 2em;
-    text-align: center;
-}
-
 /* Section House Sale */
 .section__house {
     text-align: center;
-    height: auto;
-}
-
-.house__title {
-    margin: 1.5em 0;
 }
 
 .house__description {
-    margin-bottom: 3em;
+    margin-left: 14em;
+    margin-right: 14em;
 }
 
 .house__showcase {
@@ -471,17 +451,12 @@ a:active {
 /* Section Agents */
 .section__agents {
     background: var(--secondary-green);
-}
-
-.agents__title {
     text-align: center;
-    margin: 1.5em 0;
 }
 
 .agents__description {
-    text-align: center;
-    margin: 0 19em;
-    margin-bottom: 6em;
+    margin-left: 14em;
+    margin-right: 14em;
 }
 
 .agents__showcase {
@@ -582,13 +557,9 @@ a:active {
     text-align: center;
 }
 
-.clients__title {
-    margin: 1.5em 0;
-}
-
 .clients__description {
-    margin: 0 19em;
-    margin-bottom: 6em;
+    margin-left: 14em;
+    margin-right: 14em;
 }
 
 .clients__showcase {
@@ -761,14 +732,6 @@ a:active {
         margin-top: -9.8em;
     }
 
-    .partner__description,
-    .house__description,
-    .agents__description,
-    .clients__description {
-        margin-left: 9.5em;
-        margin-right: 9.5em;
-    }
-
     .client__card--middle {
         transform: scale(1);
     }
@@ -776,18 +739,11 @@ a:active {
 
 /* Tablet Breakpoint */
 @media only screen and (max-width: 1200px) {
-    .hamburger-exit {
-        /* right: 4.6em; */
-    }
 
     .section__intro {
         flex-direction: column-reverse;
     }
-
-    .intro__h1 {
-        font-size: 2rem;
-    }
-
+    
     .intro__text {
         width: 100%;
         margin-right: 0em;
@@ -810,7 +766,7 @@ a:active {
         width: 100% !important;
     }
 
-    .property-description {
+    .property-content {
         padding: 0 !important;
         width: 100% !important;
     }
@@ -835,14 +791,8 @@ a:active {
 
 /* Mobile Breakpoint */
 @media only screen and (max-width: 599px) {
-    .hamburger-exit {
-        /* right: 2.7em; */
-    }
     .hamburger {
         display: block;
-    }
-    .intro__h1 {
-        font-size: 2rem;
     }
 
     .intro__text {
@@ -884,8 +834,6 @@ a:active {
     .house__description,
     .agents__description,
     .clients__description {
-        /* margin-left: 2.375em; */
-        /* margin-right: 2.375em; */
         margin-left: 0;
         margin-right: 0;
     }
