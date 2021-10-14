@@ -15,6 +15,18 @@
             src="https://kit.fontawesome.com/e504f5c289.js"
             crossorigin="anonymous"
         ></script>
+
+        <!--   Import JQuery   -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Flickity CSS -->
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+        />
+
+        <!-- JavaScript -->
+        <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     </head>
 
     <body>
@@ -232,80 +244,86 @@
                 sure there isn't anything embarrassing hidden in the middle of
                 text.
             </p>
-            <div class="house__showcase flex">
-                <div class="house__card flex">
+            <div class="carousel">
+                <div class="carousel-cell">
+                  <div class="house__card flex">
                     <img
-                        src="./img/houses/house-1.jpg"
-                        alt="First house sale building"
+                      src="https://cdn.glitch.me/379bb842-d369-4543-8254-e9fed7d60f9f%2Fhouse-1.jpg?v=1634167507984"
+                      alt="First house sale building"
                     />
                     <div class="house__infocard flex">
-                        <div class="border--rounded house__location">
-                            <i class="fas fa-map-marker-alt"></i>Balwyn, VIC
+                      <div class="border--rounded house__location">
+                        <i class="fas fa-map-marker-alt"></i>Balwyn, VIC
+                      </div>
+                      <h3 class="house__card__title">Parkdale House</h3>
+                      <div class="house__card__content flex">
+                        <div>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star star-grey"></i>
                         </div>
-                        <h3 class="house__card__title">Parkdale House</h3>
-                        <div class="house__card__content flex">
-                            <div>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star star-grey"></i>
-                            </div>
-                            <button type="button" class="btn border--rounded">
-                                BUY
-                            </button>
-                        </div>
+                        <button type="button" class="btn border--rounded">
+                          BUY
+                        </button>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <div class="house__card housecard__active">
+                <div class="carousel-cell">
+                  <div class="house__card ">
                     <img
-                        src="./img/houses/house-2.jpg"
-                        alt="First house sale building"
+                      src="https://cdn.glitch.me/379bb842-d369-4543-8254-e9fed7d60f9f%2Fhouse-2.jpg?v=1634167522411"
+                      alt="First house sale building"
                     />
-                    <div class="house__infocard infocard__active flex">
-                        <div class="border--rounded house__location">
-                            <i class="fas fa-map-marker-alt"></i>Mulgrave, VIC
+                    <div class="house__infocard  flex">
+                      <div class="border--rounded house__location">
+                        <i class="fas fa-map-marker-alt"></i>Mulgrave, VIC
+                      </div>
+                      <h3 class="house__card__title">Courtyard House</h3>
+                      <div class="house__card__content flex">
+                        <div>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star star-grey"></i>
                         </div>
-                        <h3 class="house__card__title">Courtyard House</h3>
-                        <div class="house__card__content flex">
-                            <div>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star star-grey"></i>
-                            </div>
-                            <button type="button" class="btn border--rounded">
-                                BUY
-                            </button>
-                        </div>
+                        <button type="button" class="btn border--rounded">
+                          BUY
+                        </button>
+                      </div>
                     </div>
+                  </div>
                 </div>
-                <div class="house__card">
+                <div class="carousel-cell">
+                  <div class="house__card">
                     <img
-                        src="./img/houses/house-3.jpg"
-                        alt="First house sale building"
+                      src="https://cdn.glitch.me/379bb842-d369-4543-8254-e9fed7d60f9f%2Fhouse-3.jpg?v=1634167527975jpg"
+                      alt="First house sale building"
                     />
                     <div class="house__infocard flex">
-                        <div class="border--rounded house__location">
-                            <i class="fas fa-map-marker-alt"></i>Glen Waverley,
-                            VIC
+                      <div class="border--rounded house__location">
+                        <i class="fas fa-map-marker-alt"></i>Glen Waverley, VIC
+                      </div>
+                      <h3 class="house__card__title">Kinler House</h3>
+                      <div class="house__card__content flex">
+                        <div>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star"></i>
+                          <i class="fas fa-star star-grey"></i>
                         </div>
-                        <h3 class="house__card__title">Kinler House</h3>
-                        <div class="house__card__content flex">
-                            <div>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star star-grey"></i>
-                            </div>
-                            <button type="button" class="btn border--rounded">
-                                BUY
-                            </button>
-                        </div>
+                        <button type="button" class="btn border--rounded">
+                          BUY
+                        </button>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
         </section>
 

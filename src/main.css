@@ -33,7 +33,7 @@ p {
 }
 
 h1 {
-    font-size:  clamp(2.027rem, 1.6950rem + 1.4754vw, 2.986rem);
+    font-size: clamp(2.027rem, 1.695rem + 1.4754vw, 2.986rem);
 }
 
 h2 {
@@ -369,6 +369,7 @@ a:active {
 /* Section House Sale */
 .section__house {
     text-align: center;
+    overflow: hidden !important;
 }
 
 .house__description {
@@ -383,6 +384,7 @@ a:active {
 }
 
 .house__card {
+    width: 22em;
     margin-bottom: 3em;
     flex-direction: column;
     justify-content: center;
@@ -395,10 +397,6 @@ a:active {
     height: 501px;
 }
 
-.housecard__active {
-    transform: scale(1.08);
-}
-
 .house__infocard {
     height: 158px;
     margin: 0 1.2em;
@@ -408,10 +406,6 @@ a:active {
     text-align: left;
     flex-direction: column;
     filter: drop-shadow(0.6rem 0.6rem 1rem rgba(0, 0, 0, 0.12));
-}
-
-.infocard__active {
-    margin-top: -6em;
 }
 
 .house__location {
@@ -447,6 +441,35 @@ a:active {
 
 .star-grey {
     color: #f3efd8;
+}
+
+/* Carousel  */
+.carousel {
+    margin: 0 auto;
+    padding-bottom: 2em !important;
+}
+
+.flickity-viewport {
+    overflow: visible !important;
+}
+
+.carousel-cell {
+    margin: 0 1em;
+    transition: transform 300ms ease-in-out;
+}
+
+.carousel-cell.is-selected {
+    transform: scale(1.08);
+    /* margin-bottom: -6em; */
+}
+
+.carousel-cell.is-selected .house__infocard {
+    transition: 300ms ease-in-out;
+    margin-top: -6em;
+}
+
+.flickity-page-dots {
+    bottom: 1em !important;
 }
 
 /* Section Agents */
@@ -690,7 +713,7 @@ a:active {
     transition: border 300ms ease-in-out, background-color 300ms ease-in-out;
     color: #ffffff;
     font-weight: bold;
-    margin-left: -.8em;
+    margin-left: -0.8em;
 }
 
 .footer__search__btn:hover {
@@ -723,27 +746,25 @@ a:active {
         display: block;
     }
 
-    .housecard__active,
     .agent__card__active {
         transform: scale(1);
-    }
-
-    .infocard__active {
-        margin-top: -9.8em;
     }
 
     .client__card--middle {
         transform: scale(1);
     }
+
+    .flickity-page-dots {
+        bottom: 1em !important;
+    }
 }
 
 /* Tablet Breakpoint */
 @media only screen and (max-width: 1200px) {
-
     .section__intro {
         flex-direction: column-reverse;
     }
-    
+
     .intro__text {
         width: 100%;
         margin-right: 0em;
@@ -778,6 +799,10 @@ a:active {
     .icon-topleft,
     .icon-topright {
         top: -1em !important;
+    }
+
+    .flickity-page-dots {
+        bottom: 1em !important;
     }
 
     .partner__description,
@@ -828,6 +853,14 @@ a:active {
 
     .icon-topright {
         right: 2em;
+    }
+
+    .carousel-cell.is-selected {
+        transform: scale(1);
+    }
+
+    .flickity-page-dots {
+        bottom: 2em !important;
     }
 
     .partner__description,
